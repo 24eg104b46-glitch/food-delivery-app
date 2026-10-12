@@ -4,11 +4,13 @@ package food.delivery.app.demo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 
 @Configuration
 public class DataLoader {
 
     @Bean
+    @Order(1)
     CommandLineRunner loadFoods(FoodRepository foodRepository) {
         return args -> {
 
@@ -34,7 +36,9 @@ public class DataLoader {
 
                 FoodItem food3 = new FoodItem();
                 food3.setName("Masala Dosa");
-                food3.setDescription("Crispy dosa with potato masala");
+                food3.setDescription(
+                    "Crispy dosa with potato masala"
+                );
                 food3.setPrice(80.0);
                 food3.setCategory("South Indian");
                 foodRepository.save(food3);
