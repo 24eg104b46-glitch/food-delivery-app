@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class DataLoader {
 
     @Bean
-    CommandLineRunner checkFoodData(FoodRepository foodRepository) {
+    CommandLineRunner loadFoods(FoodRepository foodRepository) {
         return args -> {
             System.out.println("DataLoader is running!");
             System.out.println("Total Food Items: " + foodRepository.count());
