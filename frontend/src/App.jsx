@@ -1,7 +1,7 @@
 
+
 import { useEffect, useState } from 'react'
 import './App.css'
-
 
 const API = 'https://food-delivery-app-bdo1.onrender.com/api/foods'
 const AUTH_API = 'https://food-delivery-app-bdo1.onrender.com/api/auth'
