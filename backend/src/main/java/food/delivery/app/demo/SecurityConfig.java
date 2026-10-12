@@ -46,11 +46,15 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of(
-            "http://localhost:5173",
-            "http://localhost:5174",
-            "https://food-delivery-app-theta-three.vercel.app"
-        ));
+        
+config.setAllowedOrigins(List.of(
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://food-delivery-app-theta-three.vercel.app",
+    "https://food-delivery-app-eshwargoud.vercel.app",
+    "https://food-delivery-app-git-main-eshwargoud.vercel.app"
+));
+
 
         config.setAllowedMethods(List.of(
             "GET", "POST", "PUT", "DELETE", "OPTIONS"
