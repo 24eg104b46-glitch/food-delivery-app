@@ -1,0 +1,134 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+}
+
+.navbar {
+  background: #20232a;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.admin-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+.admin-form,
+.admin-menu {
+  background: white;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  box-shadow: 0 3px 14px #0000000d;
+}
+
+.admin-form h1,
+.admin-menu h2 {
+  margin-top: 0;
+}
+
+.admin-form label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d5d8df;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.admin-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  border: 0;
+  border-radius: 7px;
+  padding: 10px 16px;
+  margin-top: 12px;
+  cursor: pointer;
+  background: #f47b20;
+  color: white;
+  font-weight: bold;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-button {
+  margin-left: 10px;
+  background: #666;
+}
+
+.admin-message {
+  padding: 10px;
+  background: #fff3e8;
+  border-radius: 7px;
+}
+
+.admin-food-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-food-card h3 {
+  margin: 7px 0;
+}
+
+.admin-food-card p {
+  color: #666;
+}
+
+.admin-food-card small {
+  color: #e66b16;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.admin-actions button {
+  margin-top: 0;
+}
+
+.delete-button {
+  background: #d93636;
+}
+
+@media (max-width: 600px) {
+  .admin-food-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
