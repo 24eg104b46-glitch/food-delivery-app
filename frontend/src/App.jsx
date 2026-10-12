@@ -2,9 +2,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API = 'http://localhost:8081/api/foods'
-const AUTH_API = 'http://localhost:8081/api/auth'
-const ORDER_API = 'http://localhost:8081/api/orders'
+
+const API = 'https://food-delivery-app-bdo1.onrender.com/api/foods'
+const AUTH_API = 'https://food-delivery-app-bdo1.onrender.com/api/auth'
+const ORDER_API = 'https://food-delivery-app-bdo1.onrender.com/api/orders'
+
 
 function App() {
   const [page, setPage] = useState('login')
