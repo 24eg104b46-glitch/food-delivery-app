@@ -34,7 +34,7 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .requestMatchers("/api/auth/**").permitAll()
                 .requestMatchers("/api/orders/**").permitAll()
-                .requestMatchers(HttpMethod.GET, "/api/foods/**").permitAll()
+                .requestMatchers("/api/foods", "/api/foods/**").permitAll()
                 .anyRequest().authenticated()
             )
             .httpBasic(Customizer.withDefaults());
